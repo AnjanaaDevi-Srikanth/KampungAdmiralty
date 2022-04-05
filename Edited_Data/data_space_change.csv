@@ -1,0 +1,167 @@
+s.no,level,label,New label,Name in tooltip,New S.no,type,description,category,division
+0,B1,B1_CLL,B1_CLL,Main Lift Lobby,1,Vertical_Street,lift,vertical,community
+1,B1,B1_Carpark_entrance,B1_Carpark,Carpark,2,Community_Street,carpark,open,community
+2,B1,B1_Carpark_zone_1,B1_Carpark,Carpark,,Community_Street,carpark,open,community
+3,B1,B1_Carpark_zone_2,B1_Carpark,Carpark,,Community_Street,carpark,open,community
+4,B1,B1_Carpark_zone_3,B1_Carpark,Carpark,,Community_Street,carpark,open,community
+5,B1,B1_Carpark_zone_4,B1_Carpark,Carpark,,Community_Street,carpark,open,community
+6,B1,B1_ELL_2,B1_ELL,Emergency Lift,3,Vertical_Street,lift,vertical,service
+7,B1,B1_Posb_bank,B1_Posb_bank,Entrance to bank,4,Commercial_Street,posb_atm,open,community
+8,B1,B1_R1_LL,B1_R1_LL,Residential Lift Lobby 1,5,Vertical_Street,lift,vertical,residential
+9,B1,B1_R2_LL,B1_R2_LL,Residential Lift Lobby 2,6,Vertical_Street,lift,vertical,residential
+10,B1,B1_SLL,B1_SLL,Service Lift,7,Vertical_Street,lift,vertical,service
+11,B1,B1_Supermarket_entrance_1,B1_Supermarket_entrance_1,Supermarket Entrance 1,8,Commercial_Street,supermarket_entrance,open,community
+12,B1,B1_Supermarket_entrance_2,B1_Supermarket_entrance_2,Supermarket Entrance 2,9,Commercial_Street,supermarket_entrance,open,community
+13,B2,B2_CLL,B2_CLL,Main Lift Lobby,10,Vertical_Street,lift,vertical,community
+14,B2,B2_Carpark_zone_1,B2_Carpark,Carpark,11,Community_Street,carpark,open,community
+15,B2,B2_Carpark_zone_2,B2_Carpark,Carpark,,Community_Street,carpark,open,community
+16,B2,B2_Carpark_zone_3,B2_Carpark,Carpark,,Community_Street,carpark,open,community
+17,B2,B2_Carpark_zone_4,B2_Carpark,Carpark,,Community_Street,carpark,open,community
+18,B2,B2_Carpark_zone_5,B2_Carpark,Carpark,,Community_Street,carpark,open,community
+19,B2,B2_Carpark_zone_6,B2_Carpark,Carpark,,Community_Street,carpark,open,community
+20,B2,B2_ELL_1,B2_ELL,Emergency Lift,12,Vertical_Street,lift,vertical,service
+21,B2,B2_ELL_2,B2_ELL,Emergency Lift,,Vertical_Street,lift,vertical,service
+22,B2,B2_R1_LL,B2_R1_LL,Residential Lift Lobby 1,13,Vertical_Street,lift,vertical,residential
+23,B2,B2_R2_LL,B2_R2_LL,Residential Lift Lobby 2,14,Vertical_Street,lift,vertical,residential
+24,B2,B2_SLL,B2_SLL,Service Lift,15,Vertical_Street,lift,vertical,service
+25,L10,L10_R1_LL,L10_R1_LL,Residential Lift Lobby 1,16,Vertical_Street,lift,vertical,residential
+26,L10,L10_R1_LL_corridor,L10_R1_LL,Residential Lift Lobby 1,,Residential_Street,walk,horizontal,residential
+27,L10,L10_R2_LL,L10_R2_LL,Residential Lift Lobby 2,17,Vertical_Street,lift,vertical,residential
+28,L10,L10_R2_LL_corridor,L10_R2_LL,Residential Lift Lobby 2,,Residential_Street,walk,horizontal,residential
+29,L11,L11_R1_LL,L11_R1_LL,Residential Lift Lobby 1,18,Vertical_Street,lift,vertical,residential
+30,L11,L11_R1_LL_corridor,L11_R1_LL,Residential Lift Lobby 1,,Residential_Street,walk,horizontal,residential
+31,L11,L11_R2_LL,L11_R2_LL,Residential Lift Lobby 2,19,Vertical_Street,lift,vertical,residential
+32,L11,L11_R2_LL_corridor,L11_R2_LL,Residential Lift Lobby 2,,Residential_Street,walk,horizontal,residential
+33,L1,L1_CLL,L1_CLL,Main Lift Lobby,20,Vertical_Street,lift,vertical,community
+34,L1,L1_CP_walkway,L1_CP,Community Plaza,21,Commercial_Street,walk,horizontal,community
+35,L1,L1_CP_zone_1,L1_CP,Community Plaza,,Social_Space,plaza,open,community
+36,L1,L1_CP_zone_2,L1_CP,Community Plaza,,Social_Space,plaza,open,community
+37,L1,L1_CP_zone_3,L1_CP,Community Plaza,,Social_Space,plaza,open,community
+38,L1,L1_CP_zone_4,L1_CP,Community Plaza,,Social_Space,plaza,open,community
+39,L1,L1_ELL,L1_ELL,Emergency Lift,22,Vertical_Street,stairs,vertical,service
+40,L1,L1_ELL_2,L1_ELL,Emergency Lift,,Vertical_Street,lift,vertical,service
+41,L1,L1_Entrance_1,L1_Ent_1,Main Entrance,23,Entrance_Street,walk,horizontal,community
+42,L1,L1_Entrance_1_lobby,L1_Ent_1,Main Entrance,,Commercial_Street,walk,horizontal,community
+43,L1,L1_Entrance_2,L1_Ent_2,Entrance near Residential Lift Lobby 1,24,Entrance_Street,walk,horizontal,community
+44,L1,L1_Entrance_2_3_walkway,L1_Ent_2,Entrance near Residential Lift Lobby 1,,Entrance_Street,walk,horizontal,community
+45,L1,L1_Entrance_3,L1_Ent_2,Entrance near Residential Lift Lobby 1,,Entrance_Street,walk,horizontal,community
+46,L1,L1_Entrance_3_4_walkway,L1_Ent_3,Entrance near Residential Lift Lobby 2,25,Entrance_Street,walk,horizontal,community
+47,L1,L1_Entrance_4,L1_Ent_3,Entrance near Residential Lift Lobby 2,,Entrance_Street,walk,horizontal,community
+48,L1,L1_Entrance_5,L1_Ent_3,Entrance near Residential Lift Lobby 2,,Entrance_Street,walk,horizontal,community
+49,L1,L1_Entrance_6,L1_Ent_3,Entrance near Residential Lift Lobby 2,,Entrance_Street,walk,horizontal,community
+50,L1,L1_Entrance_7,L1_Ent_mrt,Entrance from Admiralty MRT,26,Entrance_Street,walk,horizontal,community
+51,L1,L1_Entrance_8,L1_Ent_mrt,Entrance from Admiralty MRT,,Entrance_Street,stairs,vertical,community
+52,L1,L1_Entrance_mrt,L1_Ent_mrt,Entrance from Admiralty MRT,,Entrance_Street,walk,horizontal,community
+53,L1,L1_Fish_pond,L1_Fish_pond,Fish Pond,27,Social_Space,stage,open,community
+54,L1,L1_PG,L1_PG,Playground,28,Social_Space,playground,open,community
+55,L1,L1_R1_LL,L1_R1_LL,Residential Lift Lobby 1,29,Vertical_Street,lift,vertical,residential
+56,L1,L1_R1_LL_walkway,L1_R1_LL,Residential Lift Lobby 1,,Residential_Street,walk,horizontal,residential
+57,L1,L1_R2_LL,L1_R2_LL,Residential Lift Lobby 2,30,Vertical_Street,lift,vertical,residential
+58,L1,L1_RR_walkway,L1_SLL,Service Lift,31,Community_Street,walk,horizontal,residential
+59,L1,L1_SLL,L1_SLL,Service Lift,,Vertical_Street,lift,vertical,service
+60,L1,L1_SLL_corridor,L1_SLL,Service Lift,,Corridor,walk,horizontal,community
+61,L1,L1_Shop_walkway_1,L1_Walkway,Walkway,32,Commercial_Street,walk,horizontal,community
+62,L1,L1_Shop_walkway_2,L1_Walkway,Walkway,,Commercial_Street,walk,horizontal,community
+63,L1,L1_Shop_walkway_3,L1_Walkway,Walkway,,Commercial_Street,walk,horizontal,community
+64,L1,L1_Shop_walkway_4,L1_Walkway,Walkway,,Commercial_Street,walk,horizontal,community
+65,L1,L1_Thoroughfare,L1_Entrance_3,Entrance near Residential Lift Lobby 2,33,Entrance_Street,walk,horizontal,community
+66,L1,L1_Yassin_walkway,L1_Walkway,Walkway,,Commercial_Street,walk,horizontal,community
+67,L2,L2_CLL,L2_CLL,Main Lift Lobby,34,Vertical_Street,lift,vertical,community
+68,L2,L2_ELL_1,L2_ELL,Emergency Lift,35,Vertical_Street,lift,vertical,service
+69,L2,L2_ELL_2,L2_ELL,Emergency Lift,,Vertical_Street,lift,vertical,service
+70,L2,L2_FC_zone_1,L2_FC,Food Court,36,Commercial_Street,table,open,community
+71,L2,L2_FC_zone_10,L2_FC,Food Court,,Commercial_Street,table,open,community
+72,L2,L2_FC_zone_11,L2_FC,Food Court,,Commercial_Street,table,open,community
+73,L2,L2_FC_zone_2,L2_FC,Food Court,,Commercial_Street,table,open,community
+74,L2,L2_FC_zone_3,L2_FC,Food Court,,Commercial_Street,table,open,community
+75,L2,L2_FC_zone_4,L2_FC,Food Court,,Commercial_Street,table,open,community
+76,L2,L2_FC_zone_5,L2_FC,Food Court,,Commercial_Street,table,open,community
+77,L2,L2_FC_zone_5_walkway,L2_FC,Food Court,,Commercial_Street,walk,horizontal,community
+78,L2,L2_FC_zone_6,L2_FC,Food Court,,Commercial_Street,table,open,community
+79,L2,L2_FC_zone_7,L2_FC,Food Court,,Commercial_Street,table,open,community
+80,L2,L2_FC_zone_8,L2_FC,Food Court,,Commercial_Street,table,open,community
+81,L2,L2_FC_zone_8_walkway,L2_FC,Food Court,,Commercial_Street,walk,horizontal,community
+82,L2,L2_FC_zone_9,L2_FC,Food Court,,Commercial_Street,table,open,community
+83,L2,L2_FC_zone_9_walkway,L2_FC,Food Court,,Commercial_Street,walk,horizontal,community
+84,L2,L2_SLL,L2_SLL,Service Lift,37,Vertical_Street,lift,vertical,service
+85,L2,L2_SLL_corridor,L2_SLL,Service Lift,,Corridor,walk,horizontal,community
+86,L3,L3_CLL,L3_CLL,Main Lift Lobby,38,Vertical_Street,lift,vertical,community
+87,L4,L4_CLL,L4_CLL,Main Lift Lobby,,Vertical_Street,lift,vertical,community
+88,L4,L4_R1_LL,L4_R1_LL,Residential Lift Lobby 1,39,Vertical_Street,lift,vertical,residential
+89,L4,L4_R1_LL_corridor,L4_R1_LL,Residential Lift Lobby 1,,Residential_Street,walk,horizontal,residential
+90,L4,L4_R1_deck,L4_R1_garden,Garden near Residential Lift Lobby 1,40,Social_Space,garden,open,residential
+91,L4,L4_R1_garden,L4_R1_garden,Garden near Residential Lift Lobby 1,,Garden_Street,garden,open,residential
+92,L4,L4_R2_LL,L4_R2_LL,Residential Lift Lobby 2,41,Vertical_Street,lift,vertical,residential
+93,L4,L4_R2_LL_corridor,L4_R2_LL,Residential Lift Lobby 2,,Residential_Street,walk,horizontal,residential
+94,L4,L4_R2_deck,L4_R2_garden,Garden near Residential Lift Lobby 2,42,Social_Space,garden,open,residential
+95,L4,L4_R2_garden,L4_R2_garden,Garden near Residential Lift Lobby 2,,Garden_Street,garden,open,residential
+96,L4,L4_ST_1,L4_ST,Garden,43,Garden_Street,garden,open,residential
+97,L4,L4_ST_2,L4_ST,Garden,,Garden_Street,garden,open,residential
+98,L4,L4_ST_walkway,L4_ST,Garden,,Garden_Street,walk,vertical,residential
+99,L5,L5_R1_LL,L5_R1_LL,Residential Lift Lobby 1,44,Vertical_Street,lift,vertical,residential
+100,L5,L5_R1_LL_corridor,L5_R1_LL,Residential Lift Lobby 1,,Residential_Street,walk,horizontal,residential
+101,L5,L5_R2_LL,L5_R2_LL,Residential Lift Lobby 2,45,Vertical_Street,lift,vertical,residential
+102,L5,L5_R2_LL_corridor,L5_R2_LL,Residential Lift Lobby 2,,Residential_Street,walk,horizontal,residential
+103,L6,L6_AAH_walkway,L6_walkway,Walkway,46,Community_Street,walk,horizontal,community
+104,L6,L6_CCC_walkway,L6_walkway,Walkway,,Community_Street,walk,horizontal,community
+105,L6,L6_CLL,L6_CLL,Main Lift Lobby,47,Vertical_Street,lift,vertical,community
+106,L6,L6_Deck_1,L6_Deck,Social Space,48,Social_Space,empty_space,open,community
+107,L6,L6_Deck_2,L6_Deck,Social Space,,Social_Space,empty_space,open,community
+108,L6,L6_Deck_3,L6_Deck,Social Space,,Social_Space,empty_space,open,community
+109,L6,L6_Deck_4,L6_Deck,Social Space,,Social_Space,empty_space,open,community
+110,L6,L6_ELL_2,L6_ELL,Emergency Lift,49,Vertical_Street,lift,vertical,service
+111,L6,L6_ELL_corridor,L6_walkway,Walkway,,Corridor,walk,horizontal,community
+112,L6,L6_FC,L6_FC,Fitness Centre,50,Social_Space,sport_facilities,open,community
+113,L6,L6_FC_walkway,L6_FC,Fitness Centre,,Garden_Street,garden_walk,horizontal,community
+114,L6,L6_Link_bridge,L6_Deck,Social Space,51,Social_Space,skybridge,horizontal,community
+115,L6,L6_PG,L6_PG,Playground,52,Social_Space,playground,open,community
+116,L6,L6_PG_walkway,L6_PG,Playground,,Garden_Street,walk,horizontal,community
+117,L6,L6_R1_LL,L6_R1_LL,Residential Lift Lobby 1,53,Vertical_Street,lift,vertical,residential
+118,L6,L6_R1_LL_corridor,L6_R1_LL,Residential Lift Lobby 1,,Community_Street,walk,horizontal,residential
+119,L6,L6_R2_LL,L6_R2_LL,Residential Lift Lobby 2,54,Vertical_Street,lift,vertical,residential
+120,L6,L6_R2_LL_corridor,L6_R2_LL,Residential Lift Lobby 2,,Community_Street,walk,horizontal,residential
+121,L6,L6_SLL,L6_SLL,Service Lift,55,Vertical_Street,lift,vertical,service
+122,L6,L6_SLL_corridor,L6_walkway,Walkway,,Corridor,walk,horizontal,community
+123,L6,L6_ST_1,L6_ST,Garden,56,Garden_Street,garden,open,community
+124,L6,L6_ST_2,L6_ST,Garden,,Garden_Street,garden,open,community
+125,L6,L6_ST_3,L6_ST,Garden,,Garden_Street,garden,open,community
+126,L6,L6_ST_4,L6_ST,Garden,,Garden_Street,garden,open,community
+127,L6,L6_ST_5,L6_ST,Garden,,Garden_Street,garden,open,community
+128,L7,L7_AAH_walkway,L7_walkway,Walkway,57,Community_Street,walk,horizontal,community
+129,L7,L7_CCC_walkway,L7_walkway,Walkway,,Community_Street,walk,horizontal,community
+130,L7,L7_CLL,L7_CLL,Main Lift Lobby,58,Vertical_Street,lift,vertical,community
+131,L7,L7_ELL_2,L7_ELL,Emergency Lift,59,Vertical_Street,lift,vertical,service
+132,L7,L7_ELL_corridor,L7_walkway,Walkway,,Corridor,walk,horizontal,community
+133,L7,L7_R1_LL,L7_R1_LL,Residential Lift Lobby 1,60,Vertical_Street,lift,vertical,residential
+134,L7,L7_R1_LL_corridor,L7_R1_LL,Residential Lift Lobby 1,,Residential_Street,walk,horizontal,residential
+135,L7,L7_R2_LL,L7_R2_LL,Residential Lift Lobby 2,61,Vertical_Street,lift,vertical,residential
+136,L7,L7_R2_LL_corridor,L7_R2_LL,Residential Lift Lobby 2,,Residential_Street,walk,horizontal,residential
+137,L7,L7_SLL,L7_SLL,Service Lift,62,Vertical_Street,lift,vertical,service
+138,L7,L7_SLL_corridor,L7_walkway,Walkway,,Corridor,walk,horizontal,community
+139,L8,L8_CG_steps_entrance,L8_CG_entrance,Entrance to Community Garden,63,Corridor,walk,horizontal,community
+140,L8,L8_CLL,L8_CLL,Main Lift Lobby,64,Vertical_Street,lift,vertical,community
+141,L8,L8_ELL_2,L8_ELL,Emergency Lift,65,Vertical_Street,lift,vertical,service
+142,L8,L8_ELL_corridor,L8_RG,Walkway,66,Corridor,walk,horizontal,community
+143,L8,L8_R1_LL,L8_R1_LL,Residential Lift Lobby 1,67,Vertical_Street,lift,vertical,residential
+144,L8,L8_R1_LL_corridor,L8_R1_LL,Residential Lift Lobby 1,,Residential_Street,walk,horizontal,residential
+145,L8,L8_R2_LL,L8_R2_LL,Residential Lift Lobby 2,68,Vertical_Street,lift,vertical,residential
+146,L8,L8_R2_LL_corridor,L8_R2_LL,Residential Lift Lobby 2,,Residential_Street,walk,horizontal,residential
+147,L8,L8_RG_zone_1,L8_RG,Walkway,,Garden_Street,garden_walk,horizontal,community
+148,L8,L8_RG_zone_2,L8_RG,Walkway,,Garden_Street,garden_walk,horizontal,community
+149,L8,L8_SLL,L8_SLL,Service Lift,69,Vertical_Street,lift,vertical,service
+150,L8,L8_SLL_corridor,L8_RG,Walkway,,Corridor,walk,horizontal,community
+151,L9,L9_CG_entrance,L9_CG,Community Garden,70,Garden_Street,farm_entrance,open,community
+152,L9,L9_CG_garden_zone_1,L9_CG,Community Garden,,Garden_Street,farm,open,community
+153,L9,L9_CG_garden_zone_2,L9_CG,Community Garden,,Garden_Street,farm,open,community
+154,L9,L9_CG_garden_zone_3,L9_CG,Community Garden,,Garden_Street,farm,open,community
+155,L9,L9_CG_sitting_area,L9_CG_sitting_area,Community Garden Sitting Area,71,Garden_Street,garden,open,community
+156,L9,L9_CG_steps_zone_1,L9_CG,Community Garden,,Garden_Street,garden_slope,vertical,community
+157,L9,L9_CG_steps_zone_2,L9_CG,Community Garden,,Garden_Street,garden_slope,vertical,community
+158,L9,L9_CG_steps_zone_3,L9_CG,Community Garden,,Garden_Street,garden_slope,vertical,community
+159,L9,L9_CG_steps_zone_4,L9_CG,Community Garden,,Garden_Street,garden_slope,vertical,community
+160,L9,L9_R1_LL,L9_R1_LL,Residential Lift Lobby 1,72,Vertical_Street,lift,vertical,residential
+161,L9,L9_R1_LL_corridor,L9_R1_LL,Residential Lift Lobby 1,,Residential_Street,walk,horizontal,residential
+162,L9,L9_R2_LL,L9_R2_LL,Residential Lift Lobby 2,73,Vertical_Street,lift,vertical,residential
+163,L9,L9_R2_LL_corridor,L9_R2_LL,Residential Lift Lobby 2,,Residential_Street,walk,horizontal,residential
+164,L9,L9_SLL,L9_SLL,Service Lift,74,Vertical_Street,lift,vertical,service
+165,L9,L9_SLL_corridor,L9_SLL,Service Lift,,Residential_Street,walk,horizontal,community
