@@ -1,4 +1,3 @@
-<!-- Code from d3-graph-gallery.com -->
 <!DOCTYPE html>
 <meta charset="utf-8">
 
@@ -27,12 +26,9 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered_wide.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/AnjanaaDevi-Srikanth/KampungAdmiralty/main/Stacked_area_chart/data_date.csv", function(data) {
 
-
-  //////////
-  // GENERAL //
-  //////////
+  // GENERAL // 
 
   // List of groups = header of the csv files
   var keys = data.columns.slice(1)
@@ -47,11 +43,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
     .keys(keys)
     (data)
 
-
-
-  //////////
   // AXIS //
-  //////////
 
   // Add X axis
   var x = d3.scaleLinear()
