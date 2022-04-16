@@ -32,7 +32,7 @@ with open(changefile, 'r+', newline='') as outfile:
                         if int(row1[9]) >= max1:
                             max1 = int(row1[9])                    
                  if max1 - min1 != -1440:
-                     row[2] = (max1 - min1)/60
+                     row[2] = (max1 - min1)
                  else:
                      row[2] = 0                 
                  #print( " min = ", min1, " max = ", max1)
@@ -45,7 +45,7 @@ with open(changefile, 'r+', newline='') as outfile:
                         if int(row2[9]) >= max2:
                             max2 = int(row2[9])                    
                  if max2 - min2 != -1440:
-                     row[3] = (max2 - min2)/60
+                     row[3] = (max2 - min2)
                  else:
                      row[3] = 0
                  min3=1440
@@ -57,7 +57,7 @@ with open(changefile, 'r+', newline='') as outfile:
                         if int(row3[9]) >= max3:
                             max3 = int(row3[9])                    
                  if max3 - min3 != -1440:
-                     row[4] = (max3 - min3)/60
+                     row[4] = (max3 - min3)
                  else:
                      row[4] = 0
                  row[5] = row[2] + row[3] + row[4]
