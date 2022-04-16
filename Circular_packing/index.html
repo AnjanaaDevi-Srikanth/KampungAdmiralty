@@ -18,7 +18,7 @@
 <script>
 
   // set the dimensions and margins of the graph
-  const width = 900
+  const width = 1200
   const height = 900
   
   // append the svg object to the body of the page
@@ -40,8 +40,8 @@
   
     // Size scale for countries
     const size = d3.scaleLinear()
-      .domain([0, 40])
-      .range([7,55])  // circle will be between 7 and 55 px wide
+      .domain([0, 2500])
+      .range([5,55])  // circle will be between 5 and 55 px wide
   
     // create a tooltip
     const Tooltip = d3.select("#my_dataviz")
@@ -61,7 +61,7 @@
     }
     const mousemove = function(event, d) {
       Tooltip
-        .html('<u>' + d.name + '</u>' + "<br>" + d.total + " hours")
+        .html('<u>' + "Level " + d.level + " " + d.name + '</u>' + "<br>" + d.hours + " hours " + d.min + " minutes")
         .style("left", (event.x/2+20) + "px")
         .style("top", (event.y/2-30) + "px")
     }
