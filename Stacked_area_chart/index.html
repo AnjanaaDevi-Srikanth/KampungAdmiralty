@@ -47,7 +47,7 @@ d3.csv("https://raw.githubusercontent.com/AnjanaaDevi-Srikanth/KampungAdmiralty/
 
   // Add X axis
   var x = d3.scaleLinear()
-    .domain(d3.extent(data, function(d) { return d.year; }))
+    .domain(d3.extent(data, function(d) { return d.date; }))
     .range([ 0, width ]);
   var xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")
@@ -58,29 +58,25 @@ d3.csv("https://raw.githubusercontent.com/AnjanaaDevi-Srikanth/KampungAdmiralty/
       .attr("text-anchor", "end")
       .attr("x", width)
       .attr("y", height+40 )
-      .text("Time (year)");
+      .text("Date");
 
   // Add Y axis label:
   svg.append("text")
       .attr("text-anchor", "end")
       .attr("x", 0)
       .attr("y", -20 )
-      .text("# of baby born")
+      .text("# of users of Kampung Admiralty")
       .attr("text-anchor", "start")
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0, 200000])
+    .domain([0, 24])
     .range([ height, 0 ]);
   svg.append("g")
     .call(d3.axisLeft(y).ticks(5))
 
-
-
-  //////////
   // BRUSHING AND CHART //
-  //////////
-
+ 
   // Add a clipPath: everything out of this area won't be drawn.
   var clip = svg.append("defs").append("svg:clipPath")
       .attr("id", "clip")
@@ -101,7 +97,7 @@ d3.csv("https://raw.githubusercontent.com/AnjanaaDevi-Srikanth/KampungAdmiralty/
 
   // Area generator
   var area = d3.area()
-    .x(function(d) { return x(d.data.year); })
+    .x(function(d) { return x(d.data.date); })
     .y0(function(d) { return y(d[0]); })
     .y1(function(d) { return y(d[1]); })
 
@@ -132,7 +128,7 @@ d3.csv("https://raw.githubusercontent.com/AnjanaaDevi-Srikanth/KampungAdmiralty/
     // If no selection, back to initial coordinate. Otherwise, update X axis domain
     if(!extent){
       if (!idleTimeout) return idleTimeout = setTimeout(idled, 350); // This allows to wait a little bit
-      x.domain(d3.extent(data, function(d) { return d.year; }))
+      x.domain(d3.extent(data, function(d) { return d.date; }))
     }else{
       x.domain([ x.invert(extent[0]), x.invert(extent[1]) ])
       areaChart.select(".brush").call(brush.move, null) // This remove the grey brush area as soon as the selection has been done
