@@ -1,3 +1,5 @@
+#this file is meant to calculate the duration of times spent in each space
+
 # importing csv module
 import csv
  
