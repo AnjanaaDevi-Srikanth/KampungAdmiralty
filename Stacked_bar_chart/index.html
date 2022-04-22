@@ -11,7 +11,7 @@
 
   // set the dimensions and margins of the graph
   const margin = {top: 10, right: 30, bottom: 20, left: 50},
-      width = 1460 - margin.left - margin.right,
+      width = 1060 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
   
   // append the svg object to the body of the page
@@ -35,10 +35,11 @@
     const x = d3.scaleBand()
         .domain(groups)
         .range([0, width])
-        .padding([0.4])
+        .padding([0.6])
     svg.append("g")
       .attr("transform", `translate(0, ${height})`)
-      .call(d3.axisBottom(x).tickSizeOuter(0));
+      .call(d3.axisBottom(x).tickSizeOuter(0))
+      .style("font-size","7px");
   
     // Add Y axis
     const y = d3.scaleLinear()
