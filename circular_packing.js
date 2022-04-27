@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<html>
-
-<head>
-  <title>KA Idiom 2: Grouped Circular Chart</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
-
-  <style>
-    h1,
-    h2 {
-      font-family: "Open Sans";
-      font-style: normal;
-      text-align: center;
-      position: relative;
-      margin-top: auto;
-    }
-
-    h2 {
-      font-size: "30px";
-    }
-  </style>
-</head>
-<script src="https://d3js.org/d3.v6.js"></script>
-
-<h1>Which public spaces in Kampung Admiralty are used the most?</h1>
-<h2>Which spaces are the main attractors on each level? </h2>
-
-<!-- main packed circle chart -->
-<div id="my_dataviz1"></div>
-<!-- circle chart legend -->
-<div> <svg id="my_dataviz2" height=300 width=1850></svg></div>
-
-<style>
-  .node:hover {
-    stroke-width: 7px !important;
-    opacity: 1 !important;
-  }
-</style>
-
-
-<script>
-  // set the dimensions and margins of the graph
+// set the dimensions and margins of the graph
   const margin = { top: 0, right: 30, bottom: 0, left: 50 }
   width = 1400 - margin.left - margin.right,
   height = 450 - margin.top - margin.bottom;
@@ -178,7 +135,3 @@
     .text(function (d) { return d })
     .attr("text-anchor", "left")
     .style("font-family", "Open Sans");
-
-</script>
-
-</html>
