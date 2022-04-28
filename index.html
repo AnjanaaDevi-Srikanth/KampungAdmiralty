@@ -5,104 +5,16 @@
 		<title>Pageable - Infinite Scrolling</title>
 		<link rel="stylesheet" href="//cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css">
 		<link rel="stylesheet" href="css/style.css">
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans"
-          rel="stylesheet"
-          type="text/css"
-        />
-
-        <style>
-            * {
-              box-sizing: border-box;
-            }
-            
-            h1, h2, h3 {
-                font-family: "Open Sans";
-            }
-
-            body {
-              margin: 0;
-              font-family: "Open Sans";
-            }
-           
-            .container {
-              position: relative;
-              width: 100%;
-            }
-            
-            .header {
-              text-align: center;
-              padding: 32px;
-            }
-            
-            .row {
-              display: -ms-flexbox; /* IE 10 */
-              display: flex;
-              -ms-flex-wrap: wrap; /* IE 10 */
-              flex-wrap: wrap;
-              padding: 0 4px;
-            }
-            
-            /* Create four equal columns that sits next to each other */
-            .column {
-              -ms-flex: 25%; /* IE 10 */
-              flex: 25%;
-              padding: 0 4px;
-            }
-            
-            .column img {
-              margin-top: 8px;
-              vertical-align: middle;
-            }
-            
-            /* Style the buttons */
-            .btn {
-              border: none;
-              outline: none;
-              padding: 10px 16px;
-              background-color: #f1f1f1;
-              cursor: pointer;
-              font-size: 18px;
-            }
-            
-            .btn:hover {
-              background-color: #ddd;
-            }
-            
-            .overlay {
-              position: absolute; 
-              bottom: 0; 
-              background: rgb(0, 0, 0);
-              background: rgba(0, 0, 0, 0.5); /* Black see-through */
-              color: #f1f1f1; 
-              width: 100%;
-              transition: .5s ease;
-              opacity:0;
-              color: white;
-              font-size: 20px;
-              padding: 20px;
-              text-align: center;
-            }
-            
-            .container:hover .overlay {
-              opacity: 1;
-            }
-            
-            </style>    
+        <script src="https://d3js.org/d3.v6.js"></script>
 	</head>
 	<body>
 		<main>
 			<section data-anchor="page 1">
-                <div class="header" id="myHeader">
+                <div style="width: 100%;">
                     <h1>Visualizing Space Usage and Movement Patterns in Kampung Admiralty</h1>
-                    <h2>Interactive Data Visualisation</h2>
-                    <h3>Team: Anjanaa Devi Srikanth, Tay Jing Zhi</h3>
-                    <!--<button class="btn" onclick="one()">1</button>-->
-                    <button class="btn" onclick="four()">Compact</button>
-                    <button class="btn active" onclick="two()">Enlarge</button>
-                  </div>
-                  
-                  <div class="row"> 
+                <h2>Interactive Data Visualisation</h2>
+                <h2>Team: Anjanaa Devi Srikanth, Tay Jing Zhi</h2>
+                <div class="row"> 
 
                     <div class="column">
                       <div class="container">
@@ -152,67 +64,41 @@
                       </div>
                     </div>
                   </div>
-                  
-                  <script>
-                  // Get the elements with class="column"
-                  var elements = document.getElementsByClassName("column");
-                  
-                  // Declare a loop variable
-                  var i;
-                  
-                  // Two images side by side
-                  function two() {
-                    for (i = 0; i < elements.length; i++) {
-                      elements[i].style.msFlex = "50%";  // IE10
-                      elements[i].style.flex = "50%";
-                    }
-                  }
-                  
-                  // Four images side by side
-                  function four() {
-                    for (i = 0; i < elements.length; i++) {
-                      elements[i].style.msFlex = "25%";  // IE10
-                      elements[i].style.flex = "25%";
-                    }
-                  }
-                  </script>
+                <script src="js/diagram 0.js"></script>
             </section>
 
             <section data-anchor="page 2">
-                <p><img style="float: right; width:50%" src=https://www.greenroofs.com/wp-content/uploads/2021/04/Ramboll-Studio-Dreiseitl-KampungAdmiralty-Section.jpg> 
-                    Integrated vertical developments are increasingly studied and planned in high-density cities. To investigate the success of vertical integration, we analyze tracked user activity in one development: Kampung Admiralty.
-                    <br><br>Kampung Admiralty is the first development in Singapore to fully integrate housing for the elderly in a "vertical village." Located next to Admiralty MRT station, the multi-award-winning development offers 104 senior apartments with a host of facilities including a medical center, pharmacy, retail, restaurants, a hawker center (an open-air pavilion with food stalls), and a public park and plaza. 
-                    <br><br>The Advanced Architecture Lab team in SUTD conducted an experiment in February 2021 to map people movement patterns and the usage of spaces in the vertical development. To better understand the usage of spaces in the vertical layout, we visualize the data of user movement. </p>
+                
+                <div style="width: 100%;">
+                    <h3 style="padding: 20px">
+                        Integrated vertical developments are increasingly studied and planned in high-density cities. To investigate the success of vertical integration, we analyze tracked user activity in one development: Kampung Admiralty.
+                        <br><br>
+                        Kampung Admiralty is the first development in Singapore to fully integrate housing for the elderly in a "vertical village." Located next to Admiralty MRT station, the multi-award-winning development offers 104 senior apartments with a host of facilities including a medical center, pharmacy, retail, restaurants, a hawker center (an open-air pavilion with food stalls), and a public park and plaza. 
+                        <br><br>
+                        The Advanced Architecture Lab team in SUTD conducted an experiment in February 2021 to map people movement patterns and the usage of spaces in the vertical development. To better understand the usage of spaces in the vertical layout, we visualize the data of user movement.
+                    </h3>
+                    
+                </div>
+                <img style="float: right; width:50%" src=https://www.greenroofs.com/wp-content/uploads/2021/04/Ramboll-Studio-Dreiseitl-KampungAdmiralty-Section.jpg> 
+                
             </section>
 
 			<section data-anchor="page 3">
-                <script src="https://d3js.org/d3.v6.js"></script>
-
                 <div style="width: 100%;">
                     <h1>How long does each user spend in public spaces in Kampung Admiralty?</h1>
                     <h2>What are the trends of time spent in Kampung Admiralty over weekdays and weekends (and special occasions)? </h2>
-                    <div style="width: 100%;">
                     <svg id="my_dataviz" style="background-color:none"></svg>
-                    </div>
-                    <div style="width: 70%; float:left;">
-                    <svg id="my_dataviz3" style="background-color:none" margin="10px" height=125></svg>
-                    </div>
+                    <svg id="my_dataviz3" style="background-color:none"></svg>
                 </div>
-                <script src="js/diagram 1".js></script>
+                <script src="js/diagram 1.js"></script>
             </section>
 
             <section data-anchor="page 4">
-                <script src="https://d3js.org/d3.v6.js"></script>
-
-                <div style="width: 100%;">
+                <div style="width: 60%;">
                     <h1>Which public spaces in Kampung Admiralty are used the most?</h1>
                     <h2>Which spaces are the main attractors on each level? </h2>
-                    <div style="width: 100%;">
                     <svg id="my_dataviz1" style="background-color:none"></svg>
-                    </div>
-                    <div style="margin-left: 70%;" id="meta"> 
-                        <svg id="my_dataviz2" style="background-color:none" height=300></svg>
-                    </div>
+                    <svg id="my_dataviz2" style="background-color:none"></svg>
                 </div>
                 <script src="js/diagram 2.js"></script>
             </section>

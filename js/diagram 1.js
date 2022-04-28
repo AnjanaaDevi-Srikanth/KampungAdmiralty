@@ -1,18 +1,11 @@
 // set the dimensions and margins of the graph
-  const margin = { top: 10, right: 30, bottom: 50, left: 50 },
-    width = 1560 - margin.left - margin.right,
-    height = 470 - margin.top - margin.bottom;
-
-  // append the svg object to the body of the page
-  const svg = d3.select("#my_dataviz")
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
+  const width_d1 = 1500, height_d1 = 400;
+  
+  let svg = d3.select("#my_dataviz")
+    .attr("viewBox", "0 0 " + width_d1 + " " + height_d1)
 
   // Parse the Data
-  d3.csv("https://raw.githubusercontent.com/AnjanaaDevi-Srikanth/KampungAdmiralty/main/Stacked_bar_chart/data_date.csv").then(function (data) {
+  d3.csv("data/data_date.csv").then(function (data) {
 
     // List of subgroups = header of the csv files = soil condition here
     const subgroups = data.columns.slice(1)
@@ -20,37 +13,43 @@
     // List of groups = species here = value of the first column called date -> I show them on the X axis
     const groups = data.map(d => d.date)
 
+    
+
     // Add X axis
     const x = d3.scaleBand()
       .domain(groups)
-      .range([0, width])
+      .range([width_d1*0.05, width_d1*0.95])
       .padding([0.5])
+
     svg.append("g")
-      .attr("transform", `translate(0, ${height})`)
+      .attr("transform", `translate(0, ${height_d1*0.85})`)
       .call(d3.axisBottom(x).tickSizeOuter(0))
       .style("font-size", "9px")
       .style("font-family", "Open Sans");
+    
     // text label for the x axis
     svg.append("text")             
-       .attr("x", 700 )
-       .attr("y", 450 )
+       .attr("x", "50%" )
+       .attr("y", "97%" )
        .style("text-anchor", "middle")
        .text("Days of the experiment (February 2021)")
        .style("font-size", "13px")
-       .style("font-family", "Open Sans");    
+       .style("font-family", "Open Sans");  
 
     // Add Y axis
     const y = d3.scaleLinear()
       .domain([0, 30])
-      .range([height, 0]);
+      .range([height_d1*0.85, height_d1*0.05]);
+
     svg.append("g")
       .call(d3.axisLeft(y))
+      .attr("transform", `translate(${width_d1*0.05}, 0)`)
       .style("font-size", "9px")
       .style("font-family", "Open Sans");
       // text label for the x axis
     svg.append("text")             
-       .attr("x", 5 )
-       .attr("y", 0 )
+       .attr("x", "6%" )
+       .attr("y", "5%" )
        .style("text-anchor", "left")
        .text("Hours")
        .style("font-size", "13px")
@@ -106,6 +105,7 @@
 
   // legend: select the svg area
   var SVG = d3.select("#my_dataviz3")
+  .attr("viewBox", "0 0 " + width_d1 + " " + height_d1*0.2)
 
   // create a list of keys
   var keys = ["Employee", "Resident", "Visitor"]
@@ -119,11 +119,10 @@
   SVG.selectAll("mydots")
     .data(keys)
     .enter()
-    .append("rect")
-    .attr("y", 100)
-    .attr("x", function (d, i) { return 60 + i * (size + 80) }) //50 is where the first dot appears.100 is the distance between dots
-    .attr("width", size)
-    .attr("height", size)
+    .append("circle")
+    .attr("cy", "50%")
+    .attr("cx", function (d, i) { return width_d1*0.05 + i * (size + width_d1*0.1) }) //50 is where the first dot appears.100 is the distance between dots
+    .attr("r", size/2)
     .style("fill", function (d) { return color(d) })
 
   // Add one dot in the legend for each name.
@@ -131,10 +130,11 @@
     .data(keys)
     .enter()
     .append("text")
-    .attr("y", 110)
-    .attr("x", function (d, i) { return 73 + i * (size + 80) + (size / 2) }) // 65 is where the first dot appears. 80 is the distance between dots
+    .attr("y", "50%")
+    .attr("x", function (d, i) { return width_d1*0.06 + i * (size + width_d1*0.1) }) // 65 is where the first dot appears. 80 is the distance between dots
     .style("fill", function (d) { return color(d) })
     .text(function (d) { return d })
     .attr("text-anchor", "left")
     .style("alignment-baseline", "middle")
     .style("font-family", "Open Sans");
+
