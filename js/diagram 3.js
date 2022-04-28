@@ -30,6 +30,7 @@ function createYAxis(){
             .attr("text-anchor", "middle")
             .attr("font-size", "12px")
             .attr("font-family","arial")
+            .attr("fill","#757575")
             .text(levels[i]);    
     } 
 }
@@ -106,6 +107,7 @@ function plotNodes(nodeData){
             .attr("cx", GetCoordinates(row.X,row.Y)[0])
             .attr("cy", GetCoordinates(row.X,row.Y)[1])
             .attr("r", 2 + (5 * Math.log(totalCount+1) / Math.log(100000)))
+            .attr("fill", "#757575")
             .on("mouseover", function (event,d) 
             {
                 CleanNodeText = getCleanNodeText(row)
@@ -119,12 +121,12 @@ function plotNodes(nodeData){
                     .html(CleanNodeText);
 
                 d3.select(this).transition()
-                    .style("fill", "yellow")
+                    .style("fill", "#4c93c3")
             })
             .on("mouseleave",function (event,d){
                 svg3b.select("#meta").remove()
 
-                d3.select(this).transition().style("fill", "black")
+                d3.select(this).transition().style("fill", "#757575")
             });
     }
 }
@@ -164,7 +166,7 @@ function plotEdges(user, userData, nodeData){
         .enter()
         .append("path")
             .attr("fill", "none")
-            .attr("stroke", "black")
+            .attr("stroke", "#757575")
             .attr("stroke-width", 1.5)
             .attr('opacity','0.2')
             .attr("d", function(d){
@@ -175,7 +177,7 @@ function plotEdges(user, userData, nodeData){
                 var cleanEdgeText = getCleanEdgeText(sumstat[d])
 
                 d3.select(this).transition()
-                    .style("stroke", "yellow")
+                    .style("stroke", "#4c93c3")
                     .attr("fill", "none")
                     .style("opacity", 1)
 
@@ -191,7 +193,7 @@ function plotEdges(user, userData, nodeData){
             })
             .on("mouseleave",function (event,d){
                 d3.select(this).transition()
-                    .style("stroke", "black")
+                    .style("stroke", "#757575")
                     .style("opacity", 0.2)
                 svg3b.select("#meta").remove()
             })

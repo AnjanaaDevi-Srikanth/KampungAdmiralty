@@ -10,22 +10,22 @@ body {
 }
 
 h1{
-  font-size: 20px;
+  font-size: 40px;
   text-align:center
 }
 
 h2{
-  font-size: 11px;
+  font-size: 20px;
   text-align:center;
 }
 
 h3{
-  font-size: 9px;
+  font-size: 15px;
   text-align:left;
 }
 
 p{
-  font-size: 5px;
+  font-size: 9px;
   text-align:left;
 }
 
@@ -44,35 +44,23 @@ section {
 }
 
 #page-1 {
-  background-color: #d9c2da;
+  background-color: #ffffff;
 }
 
 #page-2 {
-  background-color: #b7ace7;
+  background-color: #ffffff;
 }
 
 #page-3 {
-  background-color: #7a9fd6;
+  background-color: #ffffff;
 }
 
 #page-4 {
-  background-color: #ace5e7;
+  background-color: #ffffff;
 }
 
 #page-5 {
-  background-color: #ace7c5;
-}
-
-#page-6 {
-  background-color: #4CAF50;
-}
-
-#page-1-clone {
-  background-color: #3F51B5;
-}
-
-#page-6-clone {
-  background-color: #4CAF50;
+  background-color: #ffffff;
 }
 
 nav {
